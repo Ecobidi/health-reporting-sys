@@ -1,9 +1,10 @@
 {
-  "name": "Health Reporting System",
+  "name": "healthcare_reporting_system",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Obidi Chukwudi Emmanuel",
