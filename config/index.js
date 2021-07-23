@@ -1,7 +1,7 @@
 module.exports = {
   'domain': 'http://localhost',
   'PORT': 5050,
-  'APPNAME': 'Healthcare Reporting System',
+  'APPNAME': 'Smart Health',
   'dbhost': 'localhost',
   'dbname': 'health-care-sys',
   'dbport': 27017,

@@ -68,9 +68,16 @@ app.use((req, res, next) => {
   // res.locals.error_msg = req.flash('error_msg')
   // res.locals.success_msg = req.flash('success_msg')
   res.locals.user = req.session.user || { username: 'test' }
+
+  if (req.session?.user?.username == 'gift') app.locals.appname = "Health-Care Monitoring System"
+  else if (req.session?.user?.username == 'sammy') app.locals.appname = "Smart Health Data Collection and Reporting"
+  else if (req.session?.user?.username == 'ebuka') app.locals.appname = "Hospital Management System"
+  else if (req.session?.user?.username == 'admin') app.locals.appname = "Hospital Workflow Management System"
+  else if (req.session?.user?.username == 'jovita') app.locals.appname = "New-Era Hospital Management System"
+  else app.locals.appname = "Smart Health"
   app.locals.owner_name = owner_name
   app.locals.owner_mat_no = owner_mat_no
-  app.locals.appname = APPNAME
+  
   app.locals.port = PORT
   app.locals.domain = domain + ':' + PORT
   next()
